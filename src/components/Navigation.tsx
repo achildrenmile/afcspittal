@@ -10,6 +10,7 @@ const menuItems = [
     label: "Über uns",
     href: "/ueber-uns",
     subItems: [
+      { label: "Clubabend", href: "/ueber-uns/clubabend" },
       { label: "Beitritt", href: "/ueber-uns/beitritt" },
       { label: "Geschichte", href: "/ueber-uns/geschichte" },
     ],
