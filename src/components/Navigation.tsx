@@ -14,7 +14,14 @@ const menuItems = [
       { label: "Geschichte", href: "/ueber-uns/geschichte" },
     ],
   },
-  { label: "Aktuelles", href: "/aktuelles" },
+  {
+    label: "Diplome",
+    href: "/diplome",
+    subItems: [
+      { label: "Porcia Diplom", href: "/Ausschreibung-Porcia-Diplom.pdf" },
+      { label: "Teurnia Diplom", href: "/Ausschreibung-Teurnia-Diplom-.pdf" },
+    ],
+  },
   { label: "Kontakt", href: "/kontakt" },
 ];
 
