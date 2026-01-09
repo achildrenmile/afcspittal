@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors - derived from AFC Spittal logo */
+  --color-navy: #1e2d4d;
+  --color-navy-light: #2a3f66;
+  --color-navy-dark: #141e33;
+  --color-red: #e53935;
+  --color-red-light: #ef5350;
+  --color-red-dark: #c62828;
+  --color-cream: #f5f0e6;
+  --color-cream-dark: #e8e0d0;
+  --color-sky: #4fc3f7;
+  --color-sky-light: #81d4fa;
+  --color-sky-dark: #29b6f6;
+
+  /* Semantic Colors - Light Mode */
+  --background: var(--color-cream);
+  --background-alt: #ffffff;
+  --foreground: var(--color-navy);
+  --foreground-muted: #4a5568;
+  --primary: var(--color-navy);
+  --primary-foreground: #ffffff;
+  --accent: var(--color-red);
+  --accent-foreground: #ffffff;
+  --secondary: var(--color-sky);
+  --secondary-foreground: var(--color-navy);
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
   --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-secondary: var(--color-sky);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-navy: var(--color-navy);
+  --color-red: var(--color-red);
+  --color-cream: var(--color-cream);
+  --color-sky: var(--color-sky);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-navy-dark);
+    --background-alt: var(--color-navy);
+    --foreground: var(--color-cream);
+    --foreground-muted: #a0aec0;
+    --primary: var(--color-cream);
+    --primary-foreground: var(--color-navy);
+    --accent: var(--color-red-light);
+    --accent-foreground: #ffffff;
+    --secondary: var(--color-sky-light);
+    --secondary-foreground: var(--color-navy);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
