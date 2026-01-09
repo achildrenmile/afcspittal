@@ -6,6 +6,7 @@ import Image from "next/image";
 
 const menuItems = [
   { label: "Home", href: "/" },
+  { label: "Aktuelles", href: "/aktuelles" },
   {
     label: "Über uns",
     href: "/ueber-uns",
