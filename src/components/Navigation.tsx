@@ -24,6 +24,7 @@ const menuItems = [
       { label: "Teurnia Diplom", href: "/Ausschreibung-Teurnia-Diplom-.pdf" },
     ],
   },
+  { label: "Presse", href: "/presse" },
   { label: "Kontakt", href: "/kontakt" },
 ];
 
